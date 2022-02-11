@@ -1,0 +1,195 @@
+.header-adress,
+.header-social-link,
+.fas {
+  display: none;
+}
+
+.header {
+  flex-direction: column-reverse;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.logo-container {
+  padding: 10px 0;
+}
+
+.header-tel {
+  margin: 0;
+  color: #fff;
+}
+
+.header-contacts {
+  justify-content: space-between;
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  padding: 64px 20px 20px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 11px;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 12px 12px 0px 0px;
+  transition: transform 0.5s ease-out;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.nav-link {
+  background: #f5f5fa;
+  border-radius: 12px;
+  color: #24a3ff;
+  padding: 8px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+}
+
+#nav-trigger:checked + .header-nav {
+  transform: translateY(-100%);
+  z-index: 10;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+}
+
+#nav-trigger:checked ~ .background {
+  opacity: 0.5;
+}
+
+.mobile-link-active {
+  color: #f0145a;
+}
+
+.services-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.services-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.services-item-icon {
+  margin-bottom: 0;
+}
+
+.services-item-subtitle {
+  margin-bottom: 0;
+}
+
+.clients-item {
+  flex-basis: 50%;
+  height: 90px;
+}
+
+.clients-item:first-of-type {
+  order: 1;
+}
+
+.clients-item:nth-child(2) {
+  order: 2;
+}
+
+.clients-item:nth-child(3) {
+  order: 3;
+}
+
+.clients-item:nth-child(4) {
+  order: 4;
+}
+
+.clients-item:nth-child(5) {
+  order: 7;
+}
+
+.clients-item:nth-child(6) {
+  order: 12;
+}
+
+.clients-item:nth-child(7) {
+  order: 6;
+}
+
+.clients-item:nth-child(8) {
+  order: 5;
+}
+
+.clients-item:nth-child(9) {
+  order: 8;
+}
+
+.clients-item:nth-child(10) {
+  order: 11;
+}
+
+.clients-item:nth-child(11) {
+  order: 10;
+}
+
+.clients-item:last-of-type {
+  order: 9;
+}
+
+.footer {
+  display: flex;
+  padding: 23px 0 118px;
+  background-color: #f5f5fa;
+}
+
+.footer-actions {
+  display: block;
+}
+
+.footer-contacts-1 {
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-adress {
+  font-weight: bold;
+}
+
+.footer-contacts-2 {
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  display: flex;
+  text-align: center;
+}
+
+.footer-map,
+.footer-tel,
+.footer-email {
+  margin-left: 0;
+}
