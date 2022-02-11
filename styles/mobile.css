@@ -61,22 +61,23 @@
   display: block;
 }
 
-#nav-trigger:checked + .header-nav {
+#nav-trigger:checked ~ .header-nav {
   transform: translateY(-100%);
   z-index: 10;
 }
 
 .background {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   background-color: black;
-  opacity: 0;
 }
 
 #nav-trigger:checked ~ .background {
+  display: block;
   opacity: 0.5;
 }
 
